@@ -1,0 +1,7 @@
+Pasos para crear un repositorio en Linux:
+1.- Instalar Github usando el comando {sudo apt install git}
+2.- Crear la carpeta que se vaya a ocupar como repositorio usando el comando {mkdir nombredelacarpeta}
+3.- Iniciar Github usando el comando {git init} dentro de la carpeta creada
+4.- Configurar Github usando el comando {git --global user.email "correo@servidor.com"} seguido del comando {git --global user.name "usuario"} 
+5.- Clonar el repositorio de Github a la carpeta creada usando el comando {git clone URL}
+
