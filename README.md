@@ -1,1 +1,1 @@
-# TallerDeHerramientasComputacionales
+# THC
