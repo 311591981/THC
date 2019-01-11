@@ -24,15 +24,16 @@ M = Decimal(5.97e+24)
 m = Decimal(7.35e+22)
 r = Decimal(384400000)
 
-F = [G * (M * m / r ** 2)]
+F = G * (M * m / r ** 2)
 
-print '''Este programa calcula la fuerza de atración entre la Tierra y la Luna,
+print '''
+Este programa calcula la fuerza de atración entre la Tierra y la Luna,
 los datos que se usaron fueron los siguientes:
 
-G = 6.67e-11m³Kg-¹s-²
-M = 5.97e+24Kg
-m = 7.35e+22Kg
-r = 3844e+5m
+G = 6.67e-11m³Kg-¹s-²           Constante Gravitacional
+M = 5.97e+24Kg                  Masa de la Tierra
+m = 7.35e+22Kg                  Masa de la Luna
+r = 3844e+5m                    Distancia entre los centros de masa
 
 utilizando la Ley de Gravitación Universal dada por la ecuacion:
 
@@ -42,4 +43,8 @@ sustituyendo en la ecuacion tenemos:
 
 F = {6.67e-11m³Kg-¹s-² * [5.97e+24Kg * 7.35e+22Kg / (3844e+5m)²]}
 
-finalmente se tiene entonces que la fuerza gravitacional es F = %.2eN''' % F
+finalmente se tiene entonces que la fuerza gravitacional es:
+
+F = %.2eN''' % (F)
+
+print
