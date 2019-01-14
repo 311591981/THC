@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Emilio López Sotelo
-
-# Taréa 1
+# Taréa 1 - Emilio López Sotelo
 
 '''
 En 1687 Newton público su célebre texto titulado "Principios Matemáticos de la
@@ -13,21 +11,17 @@ Newtons o N) es la fuerza gravitacional que actua entre dos objetos, M y m (con
 unidades en Kilogramos o Kg) son las masas respectivas de cada objeto, r (con
 unidades en metros o m) es la distancia entre los centros de masa de ambos
 objetos y G (con unidades m³Kg-¹s-²) es la constante gravitacional. Teniendo
-esto en cuenta, ¿Cuál es la fuerza de atracción que existe entre el planeta
-Tierra y la Luna? Antes de enlistar el valor de nuestras variables y constantes
-cabe aclarar que denotaremos la masa de la Tierra como "M" y la masa de la Luna
-como "m". Además los datos que se ocupan a continuación han sido redondeados a
-su segundo lugar decimal con el fin de obtener consistencia entre los mismos.
+esto en cuenta, ¿Cuál es la fuerza de atracción que existe entre dos masas?
 '''
 
+import math
 import decimal
 from decimal import Decimal
 
-G = Decimal(6.67e-11)
-M = Decimal(5.97e+24)
-m = Decimal(7.35e+22)
-r = Decimal(3844e+5)
-
-F = (G * (M * m / r ** 2))
-
-print "F =%.2eN" % F
+def Fuerza_Gravedad(M,m,R):
+    F = (Decimal(6.67e-11)) * (Decimal(M) * Decimal(m) / Decimal(math.pow(R,2)))
+    print '''Este programa calcula la fuerza de atracción "F" entre dos masas "M" y "m"
+cuyos centros de masa estan a una distancia "R" entre si, en base a los valores
+que has proporcionado el valor de la fuerza es:'''
+    print "F = %.2eN" % F
+    return;
