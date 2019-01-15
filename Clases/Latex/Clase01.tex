@@ -10,9 +10,32 @@
 	La primera clase del curso la tomamos en un salón normal y no en un taller de cómputo, por lo que esta clase se enfocó mas bién en algunas de las bases teóricas referentes a la computación y no pudimos ver ningún ejemplo práctico. Esto dificultó un poco la clase a la hora de empezar a ver comandos del bash en linux ya que no había manera de comprobar su funcionalidad en ese preciso momento y mas bién habia que confiar en que los comandos hacian lo que prometian. A pesar de esto siento que fue muy valioso que la primera clase fuera de esta manera ya que nos hizo entender un poco como funciona la computadora en abstracto antes de sentarnos enfrente de una terminal y solo enfocarnos en lo que estamos viendo.
 	\\
 	\\ 
-	Lo primero que vimos fue lo que es un sistema operativo y algunos ejemplos de ellos. A grandes razgos el sistema operativo es un conjunto de programas los cuales se encargan de administrar el hardware y la comunicacion entre programas dentro del equipo, algunos ejemplos son Windows, Linux y iOS. El lenguaje de programacion en cambio es el como se escriben y construyen los programas, incluido el sistema operativo, cada uno con su propia syntaxis, reglas, instrucciones, orientación, etc. Como ejemplos tenemos Python, Java, C, C++ y muchos otros. También aprendimos que una distribución de un sistema operativo es, visto de una manera muy general, una personalizacion y orientacion de este mismo. Esto quiere decir que las distribuciones de un sistema operativo comparten el mismo Kernel, es decir las caracteristicas basicas y gran parte de la estructura del sistema operativo, pero cada una presenta su propia interfaz grafica, conjunto de paquetes instalados por default, comandos validos dentro del interprete de comandos, entre otros. Linux es un sistema operativo conocido por su enorme cantidad de distribuciones disponibles, algunas de ellas son Fedora, Debian, Ubuntu y OperaOS.
+	Lo primero que vimos fue lo que es un sistema operativo y algunos ejemplos de ellos. A grandes razgos el sistema operativo es un conjunto de programas los cuales se encargan de administrar el hardware y la comunicacion entre programas dentro del equipo, algunos ejemplos son:
 	\\
+	\begin{itemize}
+		\item Windows
+		\item Linux
+		\item iOS.
 	\\
+	\end{itemize}
+	El lenguaje de programacion en cambio es el como se escriben y construyen los programas, incluido el sistema operativo, cada uno con su propia syntaxis, reglas, instrucciones, orientación, etc. Como ejemplos tenemos:
+	\\
+	\begin{itemize}
+		\item Python
+		\item Java
+		\item C
+		\item C++ y muchos otros.
+	\\
+	\end{itemize}
+	También aprendimos que una distribución de un sistema operativo es, visto de una manera muy general, una personalizacion y orientacion de este mismo. Esto quiere decir que las distribuciones de un sistema operativo comparten el mismo Kernel, es decir las caracteristicas basicas y gran parte de la estructura del sistema operativo, pero cada una presenta su propia interfaz grafica, conjunto de paquetes instalados por default, comandos validos dentro del interprete de comandos, entre otros. Linux es un sistema operativo conocido por su enorme cantidad de distribuciones disponibles, algunas de ellas son:
+	\\
+	\begin{itemize}
+		\item Fedora
+		\item Debian
+		\item Ubuntu
+		\item OperaOS.
+	\\
+	\end{itemize}
 	Otro tema importante visto en clase fue lo que es un bit. Un bit es la manera mas pequeña de poder representar informacion en una computadora, este puede tomar el valor de 0 o 1 o ,visto de otra forma, encendido o apagado. Tambien es importante mencionar a las variables de entorno, estas son valores dinamicos que pueden afectar o determinar como se comportan los procesos que ya estan corriendo dentro de la computadora. Podriamos decir que son parte del ambiente en donde corre un proceso. De todas ellas una muy imporante es la variable PATH, esta muestra las rutas de los archivos binarios. 
 	\\
 	\\
@@ -29,7 +52,23 @@
 		\item /sys/, entre otros.
 	\\
 	\end{itemize}
-	Tambien muy importante son los distintos permisos que contiene un archivo dentro de Linux, estos son el de lectura, denotado con una "r", escritura, denotado con una "w" y ejecucion, denotado con una "x". A su vez esta tripleta de permisos se le asignan a cada uno de los distintos entes que puede acceder al archivo, estos tambien son 3 y son el Usuario, el Grupo y Todos. Un ejemplo de los permisos asociados a un archivo ficticio en Linux serian los siguientes:
+	Tambien muy importante son los distintos permisos que contiene un archivo dentro de Linux, estos son:
+	\\
+	\begin{enumerate}
+		\item lectura, denotado con una "r"
+		\item escritura, denotado con una "w"
+		\item ejecucion, denotado con una "x"
+	\\
+	\end{enumerate}	
+	A su vez esta tripleta de permisos se le asignan a cada uno de los distintos entes que puede acceder al archivo, estos tambien son 3 y son:
+	\\
+	\begin{enumerate}
+		\item Usuario o User 
+		\item Grupo o Group
+		\item Todos o All
+	\\
+	\end{enumerate}
+	Un ejemplo de los permisos asociados a un archivo ficticio en Linux serian los siguientes:
 	\\
 	\begin{enumerate}
 		\item Usuario: r w x
@@ -37,7 +76,15 @@
 		\item Todos: r - x
 	\\
 	\end{enumerate}
-	Si aparece la letra entonces ese ente posee ese permiso, de lo contrario el guion "-" significa que no se cuenta con ese permiso. En nuestro ejemplo el Usuario posee los 3 permisos del archivo mientras que el Grupo y Todos poseen permisos de lectura y ejecucion pero no de escritura. Cada permiso tiene asociado un numero en base a la representacion binaria de su posicion de manera que a la "r" se le asocia el 4, a la "w" se le asocia el 2 y a la x se le asocia el 1. Para determinar que permisos tiene cada ente se suman los numeros asociados a cada permiso, de manera que nuestro ejemplo anterior quedaria asi:
+	Si aparece la letra entonces ese ente posee ese permiso, de lo contrario el guion "-" significa que no se cuenta con ese permiso. En nuestro ejemplo el Usuario posee los 3 permisos del archivo mientras que el Grupo y Todos poseen permisos de lectura y ejecucion pero no de escritura. Cada permiso tiene asociado un numero en base a la representacion binaria de su posicion de manera que:
+	\\
+	\begin{enumerate} 
+		\item a "r" se le asocia el 4 que es igual a $2^{2}$
+		\item a "w" se le asocia el 2 que es igual a $2^{1}$
+		\item a "x" se le asocia el 1 que es igual a $2^{0}$
+	\\
+	\end{enumerate}
+	Para determinar que permisos tiene cada ente se suman los numeros asociados a cada permiso, de manera que nuestro ejemplo anterior quedaria asi:
 	\\
 	\begin{enumerate}
 		\item Usuario: r w x = 4 + 2 + 1 = 7
@@ -51,14 +98,19 @@
 	Para terminar con este resumen hablaremos de que es un interprete de comandos. El interprete de comandos es un programa que de lo que se encarga es de recibir instrucciones validas en una terminal y ejecutar estas mismas. Es decir, es una herramienta que permite controlar la computadora desde una interfaz puramente textual y que ademas permite ejecutar acciones que de lo contrario resultarian muy complicadas o imposibles desde la interfaz grafica. Linux posee varios interpretes de comandos, sin embargo el mas usado es conocido como bash ya que se encuentra en la ruta /bin/bash. Por ultimo esta es una lista de algunos comandos sencillos pero basicos e importantes dentro del bash de las distribuciones de Linux:
 	\\
 	\begin{itemize}
-		\item touch - actualiza el archivo y, si este no existe, lo crea
-		\item ls - enlista lo que hay en el directorio actual
-		\item chmod - cambia los permisos del archivo o directorio
-		\item cd - cambia de directorio, si no se especifica la ruta te lleva al directorio del usuario
-		\item python - abre el interprete de comandos de python dentro de bash
-		\item echo - muestra en la interfaz del interprete lo escrito despues del comando
-		\item set - muestra las variables de entorno
-		\item pwd - muestra en que directorio te encuentras
+		\item touch: actualiza el archivo y, si este no existe, lo crea
+		\item ls: enlista lo que hay en el directorio actual
+		\item chmod: cambia los permisos del archivo o directorio
+		\item cd: cambia de directorio, si no se especifica la ruta te lleva al directorio del usuario
+		\item python: abre el interprete de comandos de python dentro de bash
+		\item echo: muestra en la interfaz del interprete lo escrito despues del comando
+		\item set: muestra las variables de entorno
+		\item pwd: muestra en que directorio te encuentras
+		\item top: muestra informacion sobre procesos activos; para salir de la visualizacion hay que presionar "q"
+		\item uname -a: muestra informacion sobre el kernel
+		\item df -lh: muestra informacion sobre las unidades de almacenamiento y algunos directorios
+		\item less: muestra el contenido de un archivo de manera compacta y facil de leer
+		\item file: muestra las propiedades de un archivo o directorio
 	\\
 	\end{itemize}
 \end{document}
