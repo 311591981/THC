@@ -1,8 +1,7 @@
 i = 62
 r = 189876545.7654675432
 
-# Print out numbers with quotes "" such that we see the
-# width of the field
+# Print out numbers with quotes "" such that we see the width of the field
 
 print '"%d"' % i       # minimum field
 
@@ -58,7 +57,6 @@ print '%s' % r
 
 #se imprime como una cadena
 
-# Use %% to print the percentage sign
 print '%g %% of %.2f Euro is %.2f Euro' % \
       (5.1, 346, 5.1/100*346)
 

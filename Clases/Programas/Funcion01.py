@@ -13,18 +13,14 @@ def raiz(x):
         b = x/h
     return (h)
 
-print raiz(1)
-print raiz(4)
-print raiz(9)
-print raiz(9.1)
-print raiz(1000000)
-
-def raiz1(x):
+def raizcontador(x):
     h=x
     b=1.0
     e=0.0000000001
+    i=0
     while vAbsoluto(b-h)>e:
         h = (b+h)/2
         b = x/h
-        print "Hola"
+        i=i+1
+    print "Se ejecuto %i veces el ciclo" % (i)
     return (h)

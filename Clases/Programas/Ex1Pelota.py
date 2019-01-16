@@ -4,10 +4,6 @@
 
 #y = (v0 * t) - (1.0/2 * g * t ^ 2)
 
-'''
-Información del problema resuelto en este archivo
-'''
-
 print (34 * 3) - (1/2 * 9.81 * 3 ** 2) #t=3 #1/2 Calcula la división entera
 print
 print (34 * 3) - (1.0/2 * 9.81 * 3 ** 2) #t=3 #1.0/2 Calcula la división flotante "real"

@@ -31,18 +31,20 @@
 	\end{itemize}
 	Para terminar la clase se nos explico lo que es Github, el cual es un servidor de Git que a su vez es un servicio en la nube que te permite subir, bajar e intercambiar información. Posteriormente ingresamos a la pagina web de Github para crear nuestro propio repositorio. La clase concluyo con los pasos para instalar Github en nuestra distribución de Linux y como clonar nuestro repositorio a la computadora así como también el como agregar nuevos archivos y directorios a nuestro repositorio desde la computadora. Los pasos a seguir fueron ejecutar los comandos a continuación en este mismo orden:
 	\begin{enumerate}
-		\item \underline{sudo apt install git}
-		\item \underline{sudo apt upgrade}
-		\item \underline{sudo apt update}
-		\item \underline{git init}
-		\item \underline{git config --global user.email "els1993@ciencias.unam.mx}
-		\item \underline{git config --global user.name "311591981"}
-		\item \underline{cd Documents, "Documents" es la carpeta donde quise clonar mi repositorio}
-		\item \underline{git clone URL, "URL" es la URL de mi repositorio}
-		\item \underline{git cd THC, "THC" es el nombre de mi repositorio}
-		\item \underline{git add *, el "*" sirve para agregar todos los archivos y directorios, de manera alternativa se puede especificar la ruta de lo que se quiere agregar}
-		\item \underline{git commit, aquí se escribe un comentario referente a los cambios que se van a hacer}
-		\item \underline{git push}
-		\item \underline{ingresas tu usuario}
-		\item \underline{ingresas tu contraseña}	\end{enumerate}
+		\item sudo apt install git, sirve para instalar git.
+		\item sudo apt upgrade
+		\item sudo apt update
+		\item git init, sirve para iniciar el cliente de git.
+		\item git config --global user.email "els1993@ciencias.unam.mx", sirve para especificar que correo asociado a git se va a utilizar.
+		\item git config --global user.name "311591981", sirve para especificar que usuario asociado a git se va a utilizar.
+		\item cd Documents, "Documents" es la carpeta donde quise clonar mi repositorio
+		\item git clone URL, sirve para copiar mi repositorio al directorio Documents y URL es la URL de mi repositorio.
+		\item cd THC, sirve para entrar al directorio "THC" que es mi repositorio local.
+		\item git add *, el "*" sirve para agregar todos los archivos y directorios, de manera alternativa se puede especificar la ruta de lo que se quiere agregar
+		\item git status, este comando sirve para ver el estado del repositorio, es decir que cambios estan en espera para realizarse. Cabe aclarar que este comando puede utilizarse en cualquier momento, por ejemplo tambien despues de utilizar el comando "git commit"
+		\item git commit, aquí se escribe un comentario referente a los cambios que se van a hacer
+		\item git push, sube los cambios agregados a la nube
+		\item ingresas tu usuario, sirve para autentificar 
+		\item ingresas tu contraseña, sirve para autentificar	
+	\end{enumerate}
 \end{document}
