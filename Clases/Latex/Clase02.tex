@@ -1,49 +1,48 @@
 \documentclass[letterpaper, 12pt, oneside]{article}
 \usepackage[utf8]{inputenc}
 
-\title{Resumen\\Clase - 02}
-\author{Emilio López Sotelo}
-\date{8/01/2019}
+\title{\Huge \textbf{Resumen de clase\\02}}
+\author{\textbf{Emilio López Sotelo}}
+\date{\textbf{8/01/2019}}
 
 \begin{document}
 	\maketitle
-	La segunda clase del curso la tomamos por primera vez en un taller de cómputo, esta fue la primera interaccion en clase que tuvimos con un equipo fisico donde pudimos, entre otras cosas, empezar a probar los comandos que habiamos visto la clase anterior. En mi caso yo llevé mi propia laptop personal por lo que un primer paso fue instalar una maquina virtual en mi computadora para poder virtualizar una distribucion de Linux sin tener que intalar el sistema operativo a la par de Windows10. La maquina virtual que decidi ocupar fue Oracle VM Virtual Box y la distribucion instalada en ella fue la version mas reciente de Ubuntu 64bits. Se nos explico que un core es equivalente a un CPU o procesador y nos fue recomendado solo instalar maquinas virtuales en equipos con 4 o mas de ellos, en mi caso mi computadora cuenta con 8 cores por lo que no tuve problema alguno.
+	La segunda clase del curso la tomamos por primera vez en un taller de cómputo, esta fue la primera interacción en clase que tuvimos con un equipo físico donde pudimos, entre otras cosas, empezar a probar los comandos que habíamos visto la clase anterior. En mi caso yo llevé mi propia laptop personal por lo que un primer paso fue instalar una maquina virtual en mi computadora para poder virtualizar una distribución de Linux sin tener que instalar el sistema operativo a la par de Windows10. La maquina virtual que decidí ocupar fue Oracle VM Virtual Box y la distribución instalada en ella fue la versión mas reciente de Ubuntu64bits. Se nos explico que un core es equivalente a un CPU o procesador y nos fue recomendado solo instalar maquinas virtuales en equipos con 4 o mas de ellos, en mi caso mi computadora cuenta con 8 cores por lo que no tuve problema alguno.
 	\\
 	\\
 	Ya con el equipo listo empezamos a probar algunos de los comandos vistos la clase pasada, algunos de ellos fueron:
 	\begin{itemize}
-		\item top
-		\item cd, se nos explico que el argumento ".." sirve para subir al directorio anterior al actual y ademas pudimos por primera vez ver algunos directorios en Linux, algunos de ellos son:
+		\item \textit{top}
+		\item \textit{cd}, se nos explico que el argumento ".." sirve para subir al directorio anterior al actual y además pudimos por primera vez ver algunos directorios en Linux, algunos de ellos son:
 		\begin{itemize} 
-			\item lib 64: donde estan las bibliotecas de 64bits
-			\item lib: donde estan las bibliotecas de 32bits
-			\item home: el directorio del usuario
-			\item media: el directorio que contiene la informacion de medios externos como una memoria USB o un CD
+			\item \textit{lib 64}: donde están las bibliotecas de 64bits.
+			\item \textit{lib}: donde están las bibliotecas de 32bits.
+			\item \textit{home}: el directorio del usuario.
+			\item \textit{media}: el directorio que contiene la información de medios externos como una memoria USB o un CD.
 		\end{itemize}
-		\item ls, aprendimos que el argumento "-l" hace que la lista proporcionada contenga informacion sobre los archivos y directorios
-		\item df -lh
-		\item uname -a
-		\item touch
-		\item set, vimos un ejemplo concreto de una variable de entorno que en este caso fue "LANG=esMX.UTF-8" la cual refiere al idioma y tipo de caracteres que estan en configuracion del equipo. Ademas se nos mostro como "|" sirve para redirigir el resultado de un comando a otro comando, en este caso se utilizo la combinacion "set | less"
-		\item chmod, cambiamos los permisos de un archivo recien creado de 755 a 700
-		\item file
+		\item \textit{ls}, aprendimos que el argumento "-l" hace que la lista proporcionada contenga información sobre los archivos y directorios.
+		\item \textit{df -lh}
+		\item \textit{uname -a}
+		\item \textit{touch}
+		\item \textit{set}, vimos un ejemplo concreto de una variable de entorno que en este caso fue "LANG=esMX.UTF-8" la cual refiere al idioma y tipo de caracteres que están en configuración del equipo. Ademas se nos mostró como "|" sirve para redirigir el resultado de un comando a otro comando, en este caso se utilizo la combinacion "set $|$ less".
+		\item \textit{chmod}, cambiamos los permisos de un archivo recién creado de 755 a 700.
+		\item \textit{file}
 		\
 	\end{itemize}
-	Para terminar la clase se nos explico lo que es Github, el cual es un servidor de Git que a su vez es un servicio en la nube que te permite subir, bajar e intercambiar informacion. Posteriormente ingresamos a la pagina web de Github para crear nuestro propio repositorio. La clase concluyo con los pasos para instalar Github en nuestra distribucion de Linux y como clonar nuestro repositorio a la computadora asi como tambien el como agregar nuevos archivos y directorios a nuestro repositorio desde la computadora. Los pasos a seguir fueron ejecutar los comandos a continuacion en este mismo orden:
+	Para terminar la clase se nos explico lo que es Github, el cual es un servidor de Git que a su vez es un servicio en la nube que te permite subir, bajar e intercambiar información. Posteriormente ingresamos a la pagina web de Github para crear nuestro propio repositorio. La clase concluyo con los pasos para instalar Github en nuestra distribución de Linux y como clonar nuestro repositorio a la computadora así como también el como agregar nuevos archivos y directorios a nuestro repositorio desde la computadora. Los pasos a seguir fueron ejecutar los comandos a continuación en este mismo orden:
 	\begin{enumerate}
-		\item sudo apt install git
-		\item sudo apt upgrade
-		\item sudo apt update
-		\item git init
-		\item git config --global user.email "els1993@ciencias.unam.mx
-		\item git config --global user.name "311591981"
-		\item cd Documents, "Documents" es la carpeta donde quise clonar mi repositorio
-		\item git clone URL, "URL" es la URL de mi repositorio
-		\item git cd THC, "THC" es el nombre de mi repositorio
-		\item git add *, el "*" sirve para agregar todos los archivos y directorios, de manera alternativa se puede especificar la ruta de lo que se quiere agregar
-		\item git commit, aqui se escribe un comentario referente a los cambios que se van a hacer
-		\item git push
-		\item ingresas tu usuario
-		\item ingresas tu contraseña
-	\end{enumerate}
+		\item \underline{sudo apt install git}
+		\item \underline{sudo apt upgrade}
+		\item \underline{sudo apt update}
+		\item \underline{git init}
+		\item \underline{git config --global user.email "els1993@ciencias.unam.mx}
+		\item \underline{git config --global user.name "311591981"}
+		\item \underline{cd Documents, "Documents" es la carpeta donde quise clonar mi repositorio}
+		\item \underline{git clone URL, "URL" es la URL de mi repositorio}
+		\item \underline{git cd THC, "THC" es el nombre de mi repositorio}
+		\item \underline{git add *, el "*" sirve para agregar todos los archivos y directorios, de manera alternativa se puede especificar la ruta de lo que se quiere agregar}
+		\item \underline{git commit, aquí se escribe un comentario referente a los cambios que se van a hacer}
+		\item \underline{git push}
+		\item \underline{ingresas tu usuario}
+		\item \underline{ingresas tu contraseña}	\end{enumerate}
 \end{document}
