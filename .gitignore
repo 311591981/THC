@@ -8,6 +8,5 @@
 *.xml
 *.toc
 *.py
-*.png
 #Python
 *.pyc
