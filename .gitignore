@@ -1,0 +1,13 @@
+#LaTeX
+*.aux
+*.log
+*.pdf
+*.gz
+*.bcf
+*.out
+*.xml
+*.toc
+*.py
+*.png
+#Python
+*.pyc
