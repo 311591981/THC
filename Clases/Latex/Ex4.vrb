@@ -1,0 +1,7 @@
+\begin{verbatim}
+		print "La raíz cuadrada de %.2f es:\n%f" % (x,s(x))
+
+		y=input("Cual es el valor al que le quieres calcular la raíz?\n")
+
+		print "La raíz cuadrada de %.2f es:\n%f" % (y,s(y))
+		\end{verbatim}

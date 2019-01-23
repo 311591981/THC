@@ -1,0 +1,87 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\graphicspath{{Imagenes/}}
+%\usetheme{Antibes}
+%\usetheme{AnnArbor}
+%\usetheme{Berkeley}
+%\usetheme{CambridgeUS}
+%\usetheme{Goettingen}
+\usetheme{Bergen}
+
+%Esto únicamente se utiliza para el tema "Bergen"
+\def\insertauthorindicator{Autor}
+\def\insertdateindicator{Fecha}
+
+\title{Taller de Herramientas Computacionales}
+\author{Emilio López Sotelo}
+\date\today
+
+\begin{document}
+	\maketitle
+		\begin{frame}
+		\frametitle{Mi Primera Presentación en LaTeX}
+		\transdissolve
+		\includegraphics[scale=0.15]{UNAM.png}
+		\end{frame}
+		\begin{frame}
+		\frametitle{Segunda Diapositiva}
+		Esta es mi segunda diapositiva
+		\end{frame}
+		\begin{frame}[fragile]
+		\begin{verbatim}
+		#!/usr/bin/python2.7
+		# -*- coding: utf-8 -*-
+		
+		'''
+		Emilio López Sotelo, 311591981
+		Taller de Herramientas Computacionales
+		--------------------------------------------------------------------------------
+		Este es un programa que utilizamos para aprender como ejecutar un programa en
+		python2.7 desde bash.
+		'''
+		
+		print "Hoy es miércoles"
+		
+		#x = 10.5; y = 1.0/3; z = 15.3
+		x,y,z=10.5,1.0/3,15.3
+		
+		H = """
+		El punto en R3 es:
+		(x,y,z) = (%.2f,%g,%G)
+		\end{verbatim}
+		\end{frame}
+		\begin{frame}[fragile]
+		\begin{verbatim}
+		""" % (x,y,z)
+		
+		print H
+		
+		G ="""
+		El punto en R3 es:
+		(x,y,z) = ({laX:.2f},{laY:g},{laZ:G})
+		
+		""".format(laX=x,laY=y,laZ=z)
+		
+		print G
+		
+		import math
+		from math import sqrt as s
+		
+		
+		x=16
+		
+		x=input("Cual es el valor al que le quieres calcular la raíz?\n")
+		\end{verbatim}
+		\end{frame}
+		\begin{frame}[fragile]
+		\begin{verbatim}
+		print "La raíz cuadrada de %.2f es:\n%f" % (x,s(x))
+		
+		y=input("Cual es el valor al que le quieres calcular la raíz?\n")
+		
+		print "La raíz cuadrada de %.2f es:\n%f" % (y,s(y))
+		\end{verbatim}
+		\end{frame}
+\end{document}

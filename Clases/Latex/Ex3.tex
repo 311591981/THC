@@ -1,0 +1,85 @@
+\documentclass{book}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{biblatex}
+\usepackage{hyperref}
+
+\title{\Huge Taller de Herramientas Computacionales}
+\author{Emilio López Sotelo}
+\date{17/01/2019}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\section*{Introducción}
+	Este libro es para fortalecer el conocimiento de la materia Taller de Herramientas Computacionales.
+	\\
+	\url{www.google.com}
+	\\
+	\hyperref[Google]{www.google.com}
+	
+	\chapter{Uso básico de Linux}
+	\section{Distribuciones de Linux}
+	\section{Comandos}
+	
+	\chapter{Introducción a LaTeX}
+	
+	\chapter{Introducción a Python}
+	\begin{verbatim}
+	#!/usr/bin/python2.7
+	# -*- coding: utf-8 -*-
+	
+	'''
+	Emilio López Sotelo, 311591981
+	Taller de Herramientas Computacionales
+	--------------------------------------------------------------------------------
+	Este es un programa que utilizamos para aprender como ejecutar un programa en
+	python2.7 desde bash.
+	'''
+	
+	print "Hoy es miércoles"
+	
+	#x = 10.5; y = 1.0/3; z = 15.3
+	x,y,z=10.5,1.0/3,15.3
+	
+	H = """
+	El punto en R3 es:
+	(x,y,z) = (%.2f,%g,%G)
+	""" % (x,y,z)
+	
+	print H
+	
+	G ="""
+	El punto en R3 es:
+	(x,y,z) = ({laX:.2f},{laY:g},{laZ:G})
+	""".format(laX=x,laY=y,laZ=z)
+	
+	print G
+	
+	import math
+	from math import sqrt as s
+	
+	
+	x=16
+	
+	x=input("Cual es el valor al que le quieres calcular la raíz?\n")
+	
+	print "La raíz cuadrada de %.2f es:\n%f" % (x,s(x))
+	
+	y=input("Cual es el valor al que le quieres calcular la raíz?\n")
+	
+	print "La raíz cuadrada de %.2f es:\n%f" % (y,s(y))
+	\end{verbatim}
+	
+	\input{Prueba01.py}
+	
+	\section*{Orientación a Objetos}
+	
+	\begin{thebibliography}{9}
+		%\bibitem{Computación}
+		Autor bla bla bla
+		\\
+		%\textit{Cualquier cosa}
+		bla bla bla
+	\end{thebibliography}
+\end{document}
