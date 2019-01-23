@@ -3,7 +3,7 @@
 
 def convertidorCF():
     x=input('''\nIngresa "C" si deseas convertir de grados Celsius a
-grados Fahrenheit o ,análogamente, ingresa "F" si deseas convertir de grados
+grados Fahrenheit o , análogamente, ingresa "F" si deseas convertir de grados
 Fahrenheit a grados Celsius:\n''')
     y=input("\nIngresa la cantidad de grados que deseas convertir:\n")
     if x=="C":
