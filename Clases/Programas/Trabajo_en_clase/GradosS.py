@@ -10,6 +10,7 @@ from Grados import mostrarlistas1
 L1 = listaC(-15,32,10)
 L2 = listaF(L1)
 mostrarlistas(L1,L2)
+print "-----------------------------------------------------------------------------------------"
 mostrarlistas1(L1,L2)
 
 a = input("¿Cual es el extremo izquierdo del intervalo?")
