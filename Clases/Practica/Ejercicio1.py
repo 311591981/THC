@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 def Fahrenheit_a_Celsius(F):
+     '''Ingresa la cantidad de grados Fahrenheit que quieras convertir a Celsius'''
      L=[]
      FL=[F]
      L.append(FL)
@@ -14,5 +15,5 @@ def Fahrenheit_a_Celsius(F):
      dif=C-Caprox
      difL=[dif]
      L.append(difL)
-     print L
+     return L
 

@@ -7,6 +7,7 @@ while x<=5:
      Lx=[x]
      x+=0.5
      LX.append(Lx)
+     
 LYU=[]
 y=-7
 while y<=7:
@@ -20,11 +21,27 @@ while y>=-7:
      Lyd=[y]
      y-=1.5
      LYD.append(Lyd)
-
-
      
-     
+LYD.append([0]);LYU.extend(LYD);LYU.sort()
+LY=LYU
 
+Malla=[]
+i=-1
+j=0
+j1=-1
 
-#Malla=[[[-5,7],[-4.5,7],[-4,7],[-3.5,7],[-3,7],[-2.5,7],[-2,7],[-1.5,7],[-1,7],[-0.5,7],[0,7],[0.5,7],[1,7],[1.5,7],[2,7],[2.5,7],[3,7],[3.5,7],[4,7],[4.5,7],[5,7]]
-               #[[-5,5.5],[-4.5,5.5],[-4,5.5],[-3.5,5.5],[-3,5.5],[-2.5,5.5],[-2,5.5],
+"""while i<len(LX):
+     i+=1
+     for x in LX:
+          L=[[LX[i][0],LY[j][0]]]
+          Malla.extend(L)
+          j+=1"""
+
+while i<len(LX):
+     i+=1
+     j1+=1
+     j=j1
+     while j<len(LY):
+          L=[[LX[i][0],LY[j][0]]]
+          Malla.extend(L)
+          j+=1

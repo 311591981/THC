@@ -6,6 +6,7 @@ from numpy import sin
 from numpy import pi
 
 def H_eps(x,eps=0.01):
+     '''Ingresa un numero x para evaluarlo en la función H_eps'''
      if x<-eps:
           return 0
      elif -eps<=x<=eps:
